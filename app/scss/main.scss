@@ -1,0 +1,158 @@
+@import "fonts";
+
+
+$main-font: 'Gotham Pro', sans-serif;
+$second-font: 'Gotham Pro', sans-serif;
+$size: 14px;
+$black: #4B4649;
+$gradient: linear-gradient(260.09deg, #008CB9 7.44%, #96BF53 91.11%);
+$white: #ffffff;
+$blue: #088DB8;
+$red: #ffcba5;
+$grey: #696969;
+$grey-light: #818181;
+
+$black: #242424;
+
+$main-green: linear-gradient(90deg, #CCD500 0%, #D7FA00 100%);
+$green: #D7FA00;
+
+$light-c7: #c7c7c7;
+
+body, html {
+  margin: 0;
+  font-family: $main-font;
+  min-width: 320px;
+  //background: $black;
+  //scroll-behavior: smooth;
+  background: #E5E5E5;
+}
+
+* {
+  letter-spacing: 0;
+}
+
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+img.lazyload, video.lazyload {
+  opacity: 0;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+.is-loaded {
+  opacity: 0;
+  visibility: visible;
+  //transition: opacity 0.3s ease, visibility 0.3s ease;
+  animation: faddingImgAnim 0.5s ease;
+}
+
+
+@keyframes faddingImgAnim {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    filter: blur(10px);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  flex-grow: 1;
+  font-family: $main-font;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+
+.wrapper {
+  width: 100%;
+}
+
+html {
+  height: auto;
+  min-height: 100%;
+  font-size: 16px;
+  display: flex;
+}
+
+.wrapper,
+body {
+  height: auto;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  //transition: padding-top 0.4s ease;
+}
+
+
+p, h1, ul, ol, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer {
+  flex-shrink: 0;
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 10;
+  position: sticky;
+  top: 0;
+
+
+}
+
+.footer {
+  width: 100%;
+  background: #2A2A34;
+}
+.copyright {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.footer-container {
+  width: 100%;
+  padding: 24px 0;
+}
+
+
+
+@import "media"; // Always at the end

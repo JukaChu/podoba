@@ -1,0 +1,18 @@
+@media screen and (max-width: 1600px) {
+  .header-cart {
+    width: 13%;
+  }
+  .header-center>ul li {
+    margin-right: 26px;
+    a {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+  .phones {
+    >a {
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+}
