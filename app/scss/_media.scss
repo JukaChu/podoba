@@ -1,18 +1,119 @@
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 768px) {
+  .account-menu {
+    width: 300px;
+  }
+  .header-container {
+    padding: 14px 0 13px;
+    .logo {
+      width: 127px;
+      height: 43px;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
   .header-cart {
-    width: 13%;
+
+    &.not-empty {
+      margin-right: 9px;
+    }
   }
-  .header-center>ul li {
-    margin-right: 26px;
+
+  .account-content {
+    border-radius: 0;
+    padding: 15px 0 15px 15px;
+  }
+  .account-food-type>a>p {
+    right: 15px;
+  }
+  .account-food-type {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+  .account-title {
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+  .account-container {
+    padding: 21px 0 46px;
+    flex-direction: column;
+
+  }
+  .account-menu {
+    width: 100%;
+    border-radius: 0;
+    padding: 39px 15px 30px;
+    min-height: 0;
+    position: relative;
+  }
+  .account-info {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 30px;
+    border-radius: 0;
+  }
+  .account {
+    .container {
+      padding: 0;
+    }
+  }
+  .account-link {
+    margin-bottom: 0;
+    margin-top: 20px;
+    &:first-child, &:last-child {
+      margin-top: 0;
+    }
+  }
+  .account-logo {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    .img {
+      width: 55px;
+      height: 55px;
+      margin-right: 15px;
+      margin-bottom: 0;
+    }
+    .text {
+      p {
+
+      }
+    }
+  }
+  .account-link.logout {
+    position: absolute;
+    right: 15px;
+    width: auto;
+    top: 17px;
     a {
-      font-size: 14px;
-      line-height: 16px;
+      p {
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+    svg {
+      display: none;
     }
   }
-  .phones {
-    >a {
-      font-size: 18px;
-      line-height: 20px;
-    }
+  .account-links {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .user-sign {
+    padding: 35px 0 45px;
+  }
+  .sign-control {
+    border-radius: 0;
+    width: 100%;
+    padding: 30px 15px 45px;
+  }
+  .sign-tabs {
+    width: 100%;
   }
 }

@@ -8,7 +8,13 @@
 
     <link rel="stylesheet" media="all" href="./libs/slick.css">
     <link rel="stylesheet" media="all" href="./libs/swiper.min.css">
+    <link rel="stylesheet" media="all" href="./libs/selectize.css">
     <link rel="stylesheet" href="./css/main.min.css">
+    <title>Podoba</title>
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>-->
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />-->
+
 </head>
 <body>
 
@@ -27,7 +33,7 @@
                         <div class="single-sign-tab active">
                             Вход
                         </div>
-                        <div class="single-sign-tab">
+                        <div class="single-sign-tab ">
                             Регистрация
                         </div>
                     </div>
@@ -36,7 +42,30 @@
                             <div class="form">
                                 <form action="">
                                     <input type="email" placeholder="Электронный адрес">
+                                    <input type="password" placeholder="Пароль" disabled>
+                                    <button class="btn btn--green">Войти</button>
+                                </form>
+                            </div>
+
+                        </div>
+                        <div class="sign-tabs__item ">
+                            <div class="form">
+                                <form action="">
+                                    <input type="text" placeholder="ФИО">
+                                    <input type="email" placeholder="Электронный адрес">
+                                    <select class="form-select" name="" id="" placeholder="Укажите вашу компанию">
+                                        <option value="">Компанія 1</option>
+                                        <option value="1">Компанія 2</option>
+                                        <option value="2">Компанія 3</option>
+                                        <option value="3">Компанія 4</option>
+                                        <option value="4">Компанія 5</option>
+                                        <option value="5">Google</option>
+                                        <option value="6">Microsoft</option>
+                                    </select>
                                     <input type="password" placeholder="Пароль">
+                                    <input type="password" placeholder="Подтвердите пароль">
+                                    <p>После нажатия на “Зарегистрироваться” Вы соглашаетесь с <a href="#" target="_blank">правилами сайта.</a></p>
+                                    <button class="btn btn--green">Зарегистрироваться</button>
                                 </form>
                             </div>
 
@@ -54,6 +83,7 @@
     </section>
 
 </main>
+
 <footer class="footer">
     <div class="container">
         <div class="footer-container">
@@ -65,5 +95,13 @@
 
     </div>
 </footer>
+<script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+
+<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/js/selectize.min.js"></script>-->
+<script type="text/javascript" src="./libs/selectize.js"></script>
+<script type="text/javascript" src="./js/scripts.min.js"></script>
 </body>
 </html>
