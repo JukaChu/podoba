@@ -1,3 +1,9 @@
+@media screen and (max-width: 1200px) {
+  .acc-date__container {
+    right: 0;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .account-menu {
     width: 300px;
@@ -9,15 +15,78 @@
       height: 43px;
     }
   }
+  .date-picker-wrapper .month-wrapper table {
+    width: 100%;
+  }
+  .acc-date__container {
+    width: 100%;
+  }
+  .date-picker-wrapper .month-wrapper {
+    padding: 15px 45px;
+  }
+  .date-picker-wrapper .month-wrapper table .day {
+    margin-bottom: 4px;
+  }
+  .date-picker-wrapper .month-wrapper table .day, .date-picker-wrapper .month-wrapper table td {
+    //line-height: 24px;
+  }
+  .acc-date-picker {
+    position: relative;
+    margin-bottom: 30px;
+    top: auto;
+    right: auto;
+    transform: none;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% - 30px);
+  }
 }
 @media screen and (max-width: 767px) {
+  .download-report {
+    padding: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: calc(100% - 15px);
+    .img {
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+    p {
+      margin-bottom: 26px;
+    }
+    button {
+      margin-left: 0;
+    }
+  }
+  .account-people {
+    padding-top: 13px;
+    padding-bottom: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    > p {
+      margin-bottom: 5px;
+      margin-top: 11px;
+    }
+  }
   .header-cart {
 
     &.not-empty {
       margin-right: 9px;
     }
   }
+  .account-content__title {
+    margin-bottom: 0;
+  }
 
+  .account-address {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    .img {
+      margin-right: 18px;
+    }
+  }
   .account-content {
     border-radius: 0;
     padding: 15px 0 15px 15px;
