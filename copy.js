@@ -893,8 +893,8 @@
     }, U.fn.dateRangePicker = function (f) {
         f || (f = {}), (f = U.extend(!0, {
             autoClose: !1,
-            format: "YYYY.MM.DD",
-            separator: " - ",
+            format: "YYYY-MM-DD",
+            separator: " to ",
             language: "auto",
             startOfWeek: "sunday",
             getValue: function () {
@@ -976,7 +976,7 @@
                 if (f.customArrowNextSymbol && (r = f.customArrowNextSymbol), t += '<div class="month-wrapper">   <table class="month1" cellspacing="0" border="0" cellpadding="0">       <thead>           <tr class="caption">               <th>                   <span class="prev">' + n + '                   </span>               </th>               <th colspan="' + a + '" class="month-name">               </th>               <th>' + (f.singleDate || !f.stickyMonths ? '<span class="next">' + r + "</span>" : "") + '               </th>           </tr>           <tr class="week-name">' + E() + "       </thead>       <tbody></tbody>   </table>", f.singleMonth || (t += '<div class="gap">' + function () {
                     for (var e = ['<div class="gap-top-mask"></div><div class="gap-bottom-mask"></div><div class="gap-lines">'], t = 0; t < 20; t++) e.push('<div class="gap-line"><div class="gap-1"></div><div class="gap-2"></div><div class="gap-3"></div></div>');
                     return e.push("</div>"), e.join("")
-                }() + '</div><table class="month2" cellspacing="0" border="0" cellpadding="0">   <thead>   <tr class="caption">       <th>' + (f.stickyMonths ? "" : '<span class="prev">' + n + "</span>") + '       </th>       <th colspan="' + a + '" class="month-name">       </th>       <th>           <span class="next">' + r + '</span>       </th>   </tr>   <tr class="week-name">' + E() + "   </thead>   <tbody></tbody></table>"), t += '<div class="dp-clearfix"></div><div class="time"><div class="time1"></div>', f.singleDate || (t += '<div class="time2"></div>'), t += '</div><div class="dp-clearfix"></div></div>', t += `<div class="footer"><div class="acc-inputs"><input type="text" placeholder="От" readonly><input type="text" placeholder="До" readonly></div>`, f.showShortcuts) {
+                }() + '</div><table class="month2" cellspacing="0" border="0" cellpadding="0">   <thead>   <tr class="caption">       <th>' + (f.stickyMonths ? "" : '<span class="prev">' + n + "</span>") + '       </th>       <th colspan="' + a + '" class="month-name">       </th>       <th>           <span class="next">' + r + '</span>       </th>   </tr>   <tr class="week-name">' + E() + "   </thead>   <tbody></tbody></table>"), t += '<div class="dp-clearfix"></div><div class="time"><div class="time1"></div>', f.singleDate || (t += '<div class="time2"></div>'), t += '</div><div class="dp-clearfix"></div></div>', t += '<div class="footer">', f.showShortcuts) {
                     t += '<div class="shortcuts"><b>' + K("shortcuts") + "</b>";
                     var s = f.shortcuts;
                     if (s) {
@@ -1305,7 +1305,7 @@
         function C() {
             (f.start || f.end) && (m.find(".day").each(function () {
                 var e = parseInt(U(this).attr("time")), t = f.start, a = f.end;
-                f.time.enabled && (e = Q(e).startOf("day").valueOf(), t = Q(t || Q().valueOf()).startOf("day").valueOf(), a = Q(a || Q().valueOf()).startOf("day").valueOf()), f.start && f.end && e <= a && t <= e || f.start && !f.end && Q(t).format("YYYY-MM-DD") == Q(e).format("YYYY-MM-DD") ? U(this).addClass("checked") : U(this).removeClass("checked"), f.start && Q(t).format("YYYY-MM-DD") == Q(e).format("YYYY-MM-DD") ? U(this).addClass("first-date-selected").addClass(`${Q(e)}`) : U(this).removeClass("first-date-selected"), f.end && Q(a).format("YYYY-MM-DD") == Q(e).format("YYYY-MM-DD") ? U(this).addClass("last-date-selected") : U(this).removeClass("last-date-selected")
+                f.time.enabled && (e = Q(e).startOf("day").valueOf(), t = Q(t || Q().valueOf()).startOf("day").valueOf(), a = Q(a || Q().valueOf()).startOf("day").valueOf()), f.start && f.end && e <= a && t <= e || f.start && !f.end && Q(t).format("YYYY-MM-DD") == Q(e).format("YYYY-MM-DD") ? U(this).addClass("checked") : U(this).removeClass("checked"), f.start && Q(t).format("YYYY-MM-DD") == Q(e).format("YYYY-MM-DD") ? U(this).addClass("first-date-selected") : U(this).removeClass("first-date-selected"), f.end && Q(a).format("YYYY-MM-DD") == Q(e).format("YYYY-MM-DD") ? U(this).addClass("last-date-selected") : U(this).removeClass("last-date-selected")
             }), m.find(".week-number").each(function () {
                 U(this).attr("data-start-time") == f.startWeek && U(this).addClass("week-number-selected")
             }))

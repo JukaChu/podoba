@@ -931,11 +931,40 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
 
 .date-picker-wrapper .month-wrapper {
   border: none;
-  padding: 30px 45px 45px;
+  padding: 30px 45px  15px 45px;
 
 }
 .date-picker-wrapper .footer {
+  //display: none;
+  background: #fff;
+  padding: 0 45px 45px;
+  width: 360px;
+  box-sizing: border-box;
+}
+input[type=date]::-webkit-calendar-picker-indicator {
   display: none;
+}
+input[type=date]::-webkit-datetime-edit {
+  text-align: center;
+}
+.acc-inputs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  input {
+    width: calc(50% - 16px);
+    margin-right: 32px;
+    height: 44px;
+    border: 1px solid #D7DBEB;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 4px 4px 4px 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 .account-title {
   width: 100%;
