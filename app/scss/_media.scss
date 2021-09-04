@@ -4,6 +4,38 @@
   }
 }
 
+@media screen and (max-width: 1030px) {
+  .day-part__single-day {
+    flex-wrap: wrap;
+    p {
+      width: 100%;
+      max-width: none;
+      order: 1;
+      margin-bottom: 15px;
+    }
+    .img {
+      order: 2;
+    }
+    .info {
+      order: 3;
+      width:60%;
+      margin-right: 0;
+    }
+  }
+}
+@media screen and (max-width: 950px) {
+  .acc-date-picker {
+    position: relative;
+    margin-bottom: 30px;
+    top: auto;
+    right: auto;
+    transform: none;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% - 30px);
+  }
+}
+
 @media screen and (max-width: 768px) {
   .account-menu {
     width: 300px;
@@ -45,8 +77,23 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .account-order__day-tablet {
+    width: calc(100% + 15px);
+    margin-left: -15px;
+    margin-right: 0;
+    margin-bottom: 35px;
+  }
   .date-picker-wrapper .footer {
     width: 100%;
+  }
+  .day-part__single-day {
+    margin-right: 20px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    .info {
+      flex-grow: 1;
+      width: auto;
+    }
   }
   .download-report {
     padding: 15px;
