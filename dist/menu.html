@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- <link rel="stylesheet" href="css/animate.css"/> -->
-
-    <link rel="stylesheet" media="all" href="./libs/slick.css">
-    <link rel="stylesheet" media="all" href="./libs/swiper.min.css">
     <link rel="stylesheet" media="all" href="./libs/selectize.css">
     <link rel="stylesheet" type="text/css" href="./libs/datepickercss.css"/>
     <link rel="stylesheet" href="./css/main.min.css">
@@ -65,27 +62,3151 @@
 </header>
 
 <main>
-    <div class="acc-date-picker">
-        <input class="input-date-pick" type="text" name="daterange" value="14.08.2021 - 22.08.2021"/>
-        <div class="acc-date__container">
 
-        </div>
-    </div>
     <section class="menu">
         <div class="container">
             <div class="menu__container">
                 <div class="menu__head">
                     <div class="account-title">
-                        История заказов
+                        Виды питания
                     </div>
                     <div class="menu__dates">
                         03.08.2020 - 11.08.2020
                     </div>
                 </div>
 
+                <div class="menu__content">
+
+                    <div class="menu__types">
+                        <button type="button" class="single-type active">Завтрак</button>
+                        <button type="button" class="single-type">Обед</button>
+                        <button type="button" class="single-type">Ужин</button>
+                    </div>
+                    <div class="menu-tabs">
+                        <div class="menu-tab active">
+                            <div class="js-slider menu-days swiper-container">
+                                <button class="btn-slid btn-slid--prev">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 14L5 8L11 2" stroke-width="2" stroke-linecap="square"/>
+                                    </svg>
+                                </button>
+
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide menu-day active">
+                                        <p>Пн</p>
+                                        <span>03.08.2020</span>
+                                    </div>
+                                    <div class="swiper-slide menu-day">
+                                        <p>Вт</p>
+                                        <span>03.08.2020</span>
+                                    </div>
+                                    <div class="swiper-slide menu-day">
+                                        <p>Ср</p>
+                                        <span>03.08.2020</span>
+                                    </div>
+                                    <div class="swiper-slide menu-day">
+                                        <p>Чт</p>
+                                        <span>03.08.2020</span>
+                                    </div>
+                                    <div class="swiper-slide menu-day">
+                                        <p>Пт</p>
+                                        <span>03.08.2020</span>
+                                    </div>
+                                    <div class="swiper-slide menu-day">
+                                        <p>Сб</p>
+                                        <span>03.08.2020</span>
+                                    </div>
+                                    <div class="swiper-slide menu-day">
+                                        <p>Нд</p>
+                                        <span>03.08.2020</span>
+                                    </div>
+
+                                </div>
+
+
+                                <button class="btn-slid btn-slid--next">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 14L11 8L5 2" stroke-width="2" stroke-linecap="square"/>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="day-tabs">
+                                <div class="day-tab active">
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Основные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-1">
+                                                    <input type="checkbox" id="day-1" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-2">
+                                                    <input type="checkbox" id="day-2">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-3">
+                                                    <input type="checkbox" id="day-3" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Дополнительные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-12">
+                                                    <input type="checkbox" id="day-12" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-22">
+                                                    <input type="checkbox" id="day-22">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-32">
+                                                    <input type="checkbox" id="day-32" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="day-tab">
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Основные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-1">
+                                                    <input type="checkbox" id="day-1" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-2">
+                                                    <input type="checkbox" id="day-2">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-3">
+                                                    <input type="checkbox" id="day-3" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Дополнительные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-12">
+                                                    <input type="checkbox" id="day-12" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-22">
+                                                    <input type="checkbox" id="day-22">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-32">
+                                                    <input type="checkbox" id="day-32" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="day-tab">
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Основные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-1">
+                                                    <input type="checkbox" id="day-1" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-2">
+                                                    <input type="checkbox" id="day-2">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-3">
+                                                    <input type="checkbox" id="day-3" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Дополнительные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-12">
+                                                    <input type="checkbox" id="day-12" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-22">
+                                                    <input type="checkbox" id="day-22">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-32">
+                                                    <input type="checkbox" id="day-32" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="day-tab">
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Основные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-1">
+                                                    <input type="checkbox" id="day-1" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-2">
+                                                    <input type="checkbox" id="day-2">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-3">
+                                                    <input type="checkbox" id="day-3" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Дополнительные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-12">
+                                                    <input type="checkbox" id="day-12" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-22">
+                                                    <input type="checkbox" id="day-22">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-32">
+                                                    <input type="checkbox" id="day-32" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="day-tab">
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Основные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-1">
+                                                    <input type="checkbox" id="day-1" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-2">
+                                                    <input type="checkbox" id="day-2">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-3">
+                                                    <input type="checkbox" id="day-3" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Дополнительные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-12">
+                                                    <input type="checkbox" id="day-12" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-22">
+                                                    <input type="checkbox" id="day-22">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-32">
+                                                    <input type="checkbox" id="day-32" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="day-tab">
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Основные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-1">
+                                                    <input type="checkbox" id="day-1" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-2">
+                                                    <input type="checkbox" id="day-2">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-3">
+                                                    <input type="checkbox" id="day-3" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Дополнительные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-12">
+                                                    <input type="checkbox" id="day-12" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-22">
+                                                    <input type="checkbox" id="day-22">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-32">
+                                                    <input type="checkbox" id="day-32" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="day-tab">
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Основные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-1">
+                                                    <input type="checkbox" id="day-1" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-2">
+                                                    <input type="checkbox" id="day-2">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-3">
+                                                    <input type="checkbox" id="day-3" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Дополнительные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-12">
+                                                    <input type="checkbox" id="day-12" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-22">
+                                                    <input type="checkbox" id="day-22">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-32">
+                                                    <input type="checkbox" id="day-32" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="menu-tab ">
+                            <div class="js-slider menu-days swiper-container">
+                                <button class="btn-slid btn-slid--prev">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 14L5 8L11 2" stroke-width="2" stroke-linecap="square"/>
+                                    </svg>
+                                </button>
+
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide menu-day active">
+                                        <p>Пн</p>
+                                        <span>03.08.2020</span>
+                                    </div>
+                                    <div class="swiper-slide menu-day">
+                                        <p>Вт</p>
+                                        <span>03.08.2020</span>
+                                    </div>
+                                    <div class="swiper-slide menu-day">
+                                        <p>Ср</p>
+                                        <span>03.08.2020</span>
+                                    </div>
+                                    <div class="swiper-slide menu-day">
+                                        <p>Чт</p>
+                                        <span>03.08.2020</span>
+                                    </div>
+                                    <div class="swiper-slide menu-day">
+                                        <p>Пт</p>
+                                        <span>03.08.2020</span>
+                                    </div>
+                                    <div class="swiper-slide menu-day">
+                                        <p>Сб</p>
+                                        <span>03.08.2020</span>
+                                    </div>
+                                    <div class="swiper-slide menu-day">
+                                        <p>Нд</p>
+                                        <span>03.08.2020</span>
+                                    </div>
+
+                                </div>
+
+
+                                <button class="btn-slid btn-slid--next">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 14L11 8L5 2" stroke-width="2" stroke-linecap="square"/>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="day-tabs">
+                                <div class="day-tab active">
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Основные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-1">
+                                                    <input type="checkbox" id="day-1" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-2">
+                                                    <input type="checkbox" id="day-2">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-3">
+                                                    <input type="checkbox" id="day-3" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Дополнительные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-12">
+                                                    <input type="checkbox" id="day-12" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-22">
+                                                    <input type="checkbox" id="day-22">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-32">
+                                                    <input type="checkbox" id="day-32" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="day-tab">
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Основные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-1">
+                                                    <input type="checkbox" id="day-1" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-2">
+                                                    <input type="checkbox" id="day-2">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-3">
+                                                    <input type="checkbox" id="day-3" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Дополнительные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-12">
+                                                    <input type="checkbox" id="day-12" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-22">
+                                                    <input type="checkbox" id="day-22">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-32">
+                                                    <input type="checkbox" id="day-32" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="day-tab">
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Основные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-1">
+                                                    <input type="checkbox" id="day-1" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-2">
+                                                    <input type="checkbox" id="day-2">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-3">
+                                                    <input type="checkbox" id="day-3" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Дополнительные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-12">
+                                                    <input type="checkbox" id="day-12" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-22">
+                                                    <input type="checkbox" id="day-22">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-32">
+                                                    <input type="checkbox" id="day-32" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="day-tab">
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Основные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-1">
+                                                    <input type="checkbox" id="day-1" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-2">
+                                                    <input type="checkbox" id="day-2">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-3">
+                                                    <input type="checkbox" id="day-3" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Дополнительные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-12">
+                                                    <input type="checkbox" id="day-12" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-22">
+                                                    <input type="checkbox" id="day-22">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-32">
+                                                    <input type="checkbox" id="day-32" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="day-tab">
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Основные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-1">
+                                                    <input type="checkbox" id="day-1" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-2">
+                                                    <input type="checkbox" id="day-2">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-3">
+                                                    <input type="checkbox" id="day-3" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Дополнительные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-12">
+                                                    <input type="checkbox" id="day-12" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-22">
+                                                    <input type="checkbox" id="day-22">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-32">
+                                                    <input type="checkbox" id="day-32" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="day-tab">
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Основные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-1">
+                                                    <input type="checkbox" id="day-1" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-2">
+                                                    <input type="checkbox" id="day-2">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-3">
+                                                    <input type="checkbox" id="day-3" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Дополнительные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-12">
+                                                    <input type="checkbox" id="day-12" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-22">
+                                                    <input type="checkbox" id="day-22">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-32">
+                                                    <input type="checkbox" id="day-32" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="day-tab">
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Основные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-1">
+                                                    <input type="checkbox" id="day-1" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-2">
+                                                    <input type="checkbox" id="day-2">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-3">
+                                                    <input type="checkbox" id="day-3" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Дополнительные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-12">
+                                                    <input type="checkbox" id="day-12" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-22">
+                                                    <input type="checkbox" id="day-22">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-32">
+                                                    <input type="checkbox" id="day-32" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="menu-tab ">
+                            <div class="js-slider menu-days swiper-container">
+                                <button class="btn-slid btn-slid--prev">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 14L5 8L11 2" stroke-width="2" stroke-linecap="square"/>
+                                    </svg>
+                                </button>
+
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide menu-day active">
+                                        <p>Пн</p>
+                                        <span>03.08.2020</span>
+                                    </div>
+                                    <div class="swiper-slide menu-day">
+                                        <p>Вт</p>
+                                        <span>03.08.2020</span>
+                                    </div>
+                                    <div class="swiper-slide menu-day">
+                                        <p>Ср</p>
+                                        <span>03.08.2020</span>
+                                    </div>
+                                    <div class="swiper-slide menu-day">
+                                        <p>Чт</p>
+                                        <span>03.08.2020</span>
+                                    </div>
+                                    <div class="swiper-slide menu-day">
+                                        <p>Пт</p>
+                                        <span>03.08.2020</span>
+                                    </div>
+                                    <div class="swiper-slide menu-day">
+                                        <p>Сб</p>
+                                        <span>03.08.2020</span>
+                                    </div>
+                                    <div class="swiper-slide menu-day">
+                                        <p>Нд</p>
+                                        <span>03.08.2020</span>
+                                    </div>
+
+                                </div>
+
+
+                                <button class="btn-slid btn-slid--next">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 14L11 8L5 2" stroke-width="2" stroke-linecap="square"/>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="day-tabs">
+                                <div class="day-tab active">
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Основные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-1">
+                                                    <input type="checkbox" id="day-1" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-2">
+                                                    <input type="checkbox" id="day-2">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-3">
+                                                    <input type="checkbox" id="day-3" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Дополнительные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-12">
+                                                    <input type="checkbox" id="day-12" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-22">
+                                                    <input type="checkbox" id="day-22">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-32">
+                                                    <input type="checkbox" id="day-32" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="day-tab">
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Основные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-1">
+                                                    <input type="checkbox" id="day-1" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-2">
+                                                    <input type="checkbox" id="day-2">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-3">
+                                                    <input type="checkbox" id="day-3" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Дополнительные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-12">
+                                                    <input type="checkbox" id="day-12" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-22">
+                                                    <input type="checkbox" id="day-22">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-32">
+                                                    <input type="checkbox" id="day-32" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="day-tab">
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Основные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-1">
+                                                    <input type="checkbox" id="day-1" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-2">
+                                                    <input type="checkbox" id="day-2">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-3">
+                                                    <input type="checkbox" id="day-3" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Дополнительные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-12">
+                                                    <input type="checkbox" id="day-12" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-22">
+                                                    <input type="checkbox" id="day-22">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-32">
+                                                    <input type="checkbox" id="day-32" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="day-tab">
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Основные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-1">
+                                                    <input type="checkbox" id="day-1" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-2">
+                                                    <input type="checkbox" id="day-2">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-3">
+                                                    <input type="checkbox" id="day-3" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Дополнительные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-12">
+                                                    <input type="checkbox" id="day-12" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-22">
+                                                    <input type="checkbox" id="day-22">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-32">
+                                                    <input type="checkbox" id="day-32" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="day-tab">
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Основные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-1">
+                                                    <input type="checkbox" id="day-1" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-2">
+                                                    <input type="checkbox" id="day-2">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-3">
+                                                    <input type="checkbox" id="day-3" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Дополнительные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-12">
+                                                    <input type="checkbox" id="day-12" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-22">
+                                                    <input type="checkbox" id="day-22">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-32">
+                                                    <input type="checkbox" id="day-32" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="day-tab">
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Основные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-1">
+                                                    <input type="checkbox" id="day-1" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-2">
+                                                    <input type="checkbox" id="day-2">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-3">
+                                                    <input type="checkbox" id="day-3" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Дополнительные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-12">
+                                                    <input type="checkbox" id="day-12" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-22">
+                                                    <input type="checkbox" id="day-22">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-32">
+                                                    <input type="checkbox" id="day-32" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="day-tab">
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Основные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-1">
+                                                    <input type="checkbox" id="day-1" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-2">
+                                                    <input type="checkbox" id="day-2">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-3">
+                                                    <input type="checkbox" id="day-3" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="day-tab__menu">
+                                        <div class="day-tab__head">
+                                            <p>Дополнительные блюда</p>
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-12">
+                                                    <input type="checkbox" id="day-12" disabled>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-22">
+                                                    <input type="checkbox" id="day-22">
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="day-tab__item">
+                                            <div class="img">
+                                                <img src="./img/napoleon.png" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>Говядина с овощами и картофелем</p>
+                                                <span>картофель, говядина, вода, морковь, лук репчатый, перец болгарский, горошек зеленый, соль розовая, чеснок</span>
+                                            </div>
+                                            <span>352г / 305ккал</span>
+                                            <p>129,00₴</p>
+
+                                            <div class="item-btn">
+                                                <label for="day-32">
+                                                    <input type="checkbox" id="day-32" checked>
+                                                    <div>
+                                                        <span>Заказать</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
+
+    <section class="week-control">
+        <div class="container">
+            <div class="week-control__container">
+                <button class="btn btn--white btn-calendar">Заказ на неделю</button>
+                <button class="btn btn--green">В корзину</button>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="modal-window modal-window__calendar">
+        <div class="modal-container">
+            <div class="close">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.9498 2L2.05027 11.8995"  stroke-width="2" stroke-linecap="square"/>
+                    <path d="M2.05035 2L11.9498 11.8995"  stroke-width="2" stroke-linecap="square"/>
+                </svg>
+            </div>
+            <p>Заказ на неделю</p>
+            <span>Выберете даты для повторных заказов </span>
+            <div class="modal-calendar">
+
+
+            </div>
+
+            <button class="close-modal btn btn--green">Продолжить</button>
+
+        </div>
+    </div>
 
 
 </main>
@@ -111,6 +3232,12 @@
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <!--<script type="text/javascript" src="./libs/rangepickerjs.js"></script>-->
 <script type="text/javascript" src="./libs/rangePickNot.js"></script>
