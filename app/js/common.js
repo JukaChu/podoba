@@ -407,12 +407,9 @@ function controlModalCalendar() {
     if (!calendarModal) {
 
     } else {
-        let closeBtn = calendarModal.querySelector('.close');
+
         let contBtn = calendarModal.querySelector('.close-modal');
-        closeBtn.addEventListener('click', () => {
-            calendarModal.classList.remove('open');
-            document.body.classList.remove('no-scroll');
-        });
+
         contBtn.addEventListener('click', () => {
             calendarModal.classList.remove('open');
             document.body.classList.remove('no-scroll');
@@ -423,12 +420,34 @@ function controlModalCalendar() {
 
 let modals = [...document.querySelectorAll('.modal-window')];
 
+$(document).ready(function() {
+    $('.quan-minus').click(function () {
+        var $input = $(this).parent().find('input');
+        var count = parseInt($input.val()) - 1;
+        count = count < 1 ? 1 : count;
+        $input.val(count);
+        $input.change();
+        return false;
+    });
+    $('.quan-plus').click(function () {
+        var $input = $(this).parent().find('input');
+        $input.val(parseInt($input.val()) + 1);
+        $input.change();
+        return false;
+    });
+});
+
 function modalWindows() {
         if (!modals.length) {
 
         } else {
             modals.forEach((mdl) => {
                 mdl.addEventListener('click', () => {
+                    mdl.classList.remove('open');
+                    document.body.classList.remove('no-scroll');
+                });
+                let closeBtn = mdl.querySelector('.close');
+                closeBtn.addEventListener('click', () => {
                     mdl.classList.remove('open');
                     document.body.classList.remove('no-scroll');
                 });
@@ -440,3 +459,99 @@ function modalWindows() {
 }
 modalWindows();
 controlModalCalendar();
+
+
+let modalCart = document.querySelector('.modal-window__cart');
+let removeCartItem = [...document.querySelectorAll('.rem-item')];
+function cartModalControl() {
+    if (!modalCart) {
+
+    } else {
+        let modalCartDays = [...modalCart.querySelectorAll('.menu-day')];
+        let modalDayContent = [...modalCart.querySelectorAll('.cart-content__day')];
+
+        modalCartDays.forEach((btn, k) => {
+            btn.addEventListener('click', () => {
+                if (btn.classList.contains('active')) {
+
+                } else {
+                    modalCartDays.forEach((btn2) => {
+                        btn2.classList.remove('active');
+                    });
+                    btn.classList.add('active');
+                    modalDayContent.forEach((btn3) => {
+                        btn3.classList.remove('active');
+                    });
+                    modalDayContent[k].classList.add('active');
+                }
+            })
+        });
+        if (removeCartItem.length) {
+            removeCartItem.forEach((mark) => {
+                mark.addEventListener('click', () => {
+                    mark.closest('.cart-day__item').remove();
+                })
+            });
+        }
+
+
+    }
+}
+
+
+cartModalControl();
+
+let headerCart = document.querySelector('.header-cart');
+let menuCart = document.querySelector('.btn-cart');
+
+function openCartHeader() {
+    if (!headerCart) {
+
+    } else {
+        headerCart.querySelector('a').addEventListener('click', (e) => {
+            e.preventDefault();
+        });
+        headerCart.addEventListener('click', () => {
+            document.querySelector('.modal-window__cart').classList.add('open');
+            document.body.classList.add('no-scroll');
+        });
+
+        if (!menuCart) {
+
+        } else {
+            menuCart.addEventListener('click', () => {
+                document.querySelector('.modal-window__cart').classList.add('open');
+                document.body.classList.add('no-scroll');
+            });
+        }
+
+    }
+}
+openCartHeader();
+
+let btnThanks = [...document.querySelectorAll('.btn-thanks')];
+function openThanks() {
+    if (!btnThanks.length) {
+
+    } else {
+        btnThanks.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                modals.forEach((mdl) => {
+                    mdl.classList.remove('open');
+                });
+                document.querySelector('.modal-window__thanks').classList.add('open');
+                document.body.classList.add('no-scroll');
+            });
+        });
+
+        document.querySelector('.modal-window__thanks .bottom a').addEventListener('click', () => {
+            document.body.classList.remove('no-scroll');
+            modals.forEach((mdl) => {
+                mdl.classList.remove('open');
+            });
+
+        })
+    }
+
+}
+openThanks();

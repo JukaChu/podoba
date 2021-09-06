@@ -31,6 +31,24 @@
 }
 
 @media screen and (max-width: 950px) {
+  .thanks-container {
+    width: 100%;
+    border-radius: 20px 20px 0 0 ;
+    .top {
+      padding: 118px 15px 45px;
+      p {
+        margin-top: 45px;
+      }
+    }
+  }
+  .modal-window__thanks {
+    align-items: flex-end;
+  }
+  .modal-window__thanks .modal-container {
+    width: 100%;
+    border-radius: 20px 20px 0 0 ;
+
+  }
   .acc-date-picker {
     position: relative;
     margin-bottom: 30px;
@@ -268,6 +286,70 @@
   }
 }
 
+@media screen and (max-width: 750px) {
+  .modal-window__cart {
+    .modal-container {
+      width: 100%;
+      padding: 30px 15px;
+      border-radius: 20px 20px 0 0;
+      height: calc(100vh - 128px);
+      margin-top: 128px;
+
+      .menu-days {
+        width: calc(100% + 30px);
+      }
+    }
+  }
+  .cart-footer {
+    p {
+      margin-bottom: 15px;
+    }
+    .btn {
+      width: 100%;
+    }
+  }
+  .cart-day__item {
+    flex-wrap: wrap;
+    align-items: stretch;
+
+    > p {
+      order: 1;
+      max-width: none;
+      width: calc(100% - 60px);
+      margin-bottom: 15px;
+    }
+
+    .rem-item {
+      order: 2;
+      margin-left: 20px;
+    }
+
+    .img {
+      order: 3;
+    }
+
+    > span {
+      order: 5;
+      margin-left: auto;
+      align-items: center;
+      display: flex;
+    }
+
+    .quantity {
+      order: 4;
+      margin-left: 0;
+      margin-right: 20px;
+    }
+  }
+  .cart-content {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    margin-right: 15px;
+    padding: 30px 15px 0;
+    box-sizing: border-box;
+  }
+}
+
 @media screen and (max-width: 640px) {
   .modal-container {
     padding: 40px 5px;
@@ -395,20 +477,28 @@
     width: 100%;
   }
 }
+
 @media screen and (max-width: 360px) {
+  .modal-window__cart .modal-container {
+    margin-top: 50px;
+    height: calc(100vh - 50px);
+  }
   .single-type {
     width: calc((100% / 3) - (10px / 3));
     margin-right: 5px;
+
     &:last-child {
       margin-right: 0;
     }
   }
   .week-control__container {
     flex-direction: column;
+
     .btn {
       width: 100%;
       margin-right: 0;
       margin-bottom: 10px;
+
       &:last-child {
         margin-bottom: 0;
       }
